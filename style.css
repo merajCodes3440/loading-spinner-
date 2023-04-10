@@ -1,0 +1,74 @@
+ section{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color:teal;
+    height:80vh;
+} 
+
+ul li{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+}
+ul li:hover{
+    color:white;
+    background-color: black;
+}
+
+.container{
+    border:4px solid white;
+    width:300px;
+    height:300px;
+    animation:orbit 3s linear infinite;
+    border-radius: 50%;
+}
+.box{
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    background-color:white;
+    animation-name:orbit;
+    /* animation-name:circle; */
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+    animation-direction: reverse;
+
+    /* transition: 1s ease-in-out; */
+}
+/* .box:hover{
+    transform:translate(200px);
+} */
+ @keyframes orbit {
+    from{
+        transform: rotate(o);
+    }
+    to{
+        transform: rotate(360deg);  
+    }
+ }
+
+/* -----------------code for squar---------------- */
+@keyframes circle{
+
+0%{
+  transform: translate(0,0);
+}
+25%{
+    transform: translate(0,200px);
+}
+50%{
+
+    transform: translate(200px,200px);
+}
+75%{
+    transform: translate(200px,0);
+
+}
+100%{
+    transform: translate(0,0);
+}
+
+}
